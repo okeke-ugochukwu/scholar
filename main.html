@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CGPA Calculator">
+        <meta name="theme-color" content="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="fonts.googleapis.com/css2?family=Ubuntu:ital,wght@,300;0;400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+        <title>Scholar</title>
+    </head>
+    <body>
+
+        <p>NOTE: All aphabetic entries should be capitalized<br /><br />
+        ** If you get a "NaN" result, check your inputs or refresh.<br /><br />
+        ** Course inputs must be a minimum of five.</p>
+
+        <div class="box2"  id="header">
+        
+            <div class="GPA"onclick="showGPA()" id="GPA">
+                &nbsp;  GPA
+            </div>
+
+            <div class="CGPA" onclick="showCGPA()" id="CGPA">
+                &nbsp;  CGPA
+            </div>
+        </div>
+        
+        <div class="box2" id="figures">
+
+           <div class="column1" >
+               <div class="grade">&nbsp; Grade</div>
+                <input type="text" id="course1" class="input" placeholder="Course 1" autocomplete="off">
+                <input type="text" id="course2" class="input" placeholder="Course 2" autocomplete="off">
+                <input type="text" id="course3" class="input" placeholder="Course 3" autocomplete="off">
+                <input type="text" id="course4" class="input" placeholder="Course 4" autocomplete="off">
+                <input type="text" id="course5" class="input" placeholder="Course 5" autocomplete="off">
+                <input type="text" id="course6" class="input" placeholder="Course 6" autocomplete="off">
+                <input type="text" id="course7" class="input" placeholder="Course 7" autocomplete="off">
+                <input type="text" id="course8" class="input" placeholder="Course 8" autocomplete="off">
+                <input type="text" id="course9" class="input" placeholder="Course 9" autocomplete="off">
+                <input type="text" id="course10" class="input" placeholder="Course 10" autocomplete="off">
+                <input type="text" id="course11" class="input" placeholder="Course 11" autocomplete="off">
+                <input type="text" id="course12" class="input" placeholder="Course 12" autocomplete="off">
+                <input type="text" id="course13" class="input" placeholder="Course 13" autocomplete="off">
+           </div>
+
+           <div class="column2">
+            <div class="creditUnit"> &nbsp; Credit Unit</div>
+            <input  id="cre1" class="input" autocomplete="off">
+            <input  id="cre2" class="input" autocomplete="off">
+            <input  id="cre3" class="input" autocomplete="off">
+            <input  id="cre4" class="input" autocomplete="off">
+            <input  id="cre5" class="input" autocomplete="off">
+            <input  id="cre6" class="input" autocomplete="off">
+            <input  id="cre7" class="input" autocomplete="off">
+            <input  id="cre8" class="input" autocomplete="off">
+            <input  id="cre9" class="input" autocomplete="off">
+            <input  id="cre10" class="input" autocomplete="off">
+            <input  id="cre11" class="input" autocomplete="off">
+            <input  id="cre12" class="input" autocomplete="off">
+            <input  id="cre13" class="input" autocomplete="off">
+
+            <button onclick="calculateGPA()" id="calculateGPA">Calculate</button>
+           </div> 
+            
+        </div>
+
+        <div class="box3" id="avrage">
+            <div class="column3">
+                <label for="sem1" id="semLabel">Enter GPA for first semester</label><br />
+            <input type="any" name="sem1" id="sem1" autocomplete="off"><br />
+
+            <label for="sem1" id="semLabel1">Enter GPA for second semester</label><br />
+            <input type="any" name="sem2" id="sem2" autocomplete="off">
+
+            <button onclick="calculateCGPA()" id="calculateCGPA">Calculate</button>
+            </div>
+
+            
+        </div>
+
+        <div class="result" id="result">
+            Your GPA is <span id="gpaFigure" style="font-weight: bold;"></span><br />
+            Keep working Scholar!
+        </div>
+
+        <div class="result2" id="result2">
+            Your CGPA is <span id="cgpaFigure" style="font-weight: bold;"></span><br />
+            Keep working Scholar!
+        </div>
+
+        <div class="refBox">
+           
+            <a href="index.html" id="refresh">Home</a>
+            <a href="main.html" id="refresh">Refresh</a>
+
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>
