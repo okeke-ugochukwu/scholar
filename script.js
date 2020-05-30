@@ -7,6 +7,7 @@ function btn() {
 function showGPA() {
     document.getElementById("figures").style.display = "flex";
     document.getElementById("avrage").style.display = "none";
+    document.getElementById("result2").style.display = "none";
     document.getElementById("CGPA").style.backgroundColor = "rgb(47, 28, 92)";
     document.getElementById("CGPA").style.color = "white";
     document.getElementById("GPA").style.color = "rgb(47, 28, 92)";
@@ -19,6 +20,7 @@ function showCGPA() {
     document.getElementById("GPA").style.color = "white";
     document.getElementById("CGPA").style.backgroundColor = "rgba(47, 28, 92, 0)";
     document.getElementById("CGPA").style.color = "rgb(47, 28, 92)";
+    document.getElementById("result").style.display = "none";
 }
 function calculateGPA() {
 
@@ -132,6 +134,9 @@ function calculateGPA() {
     else if (crse5 == "F") {
         var cre5b = 0;
     }
+    else if (crse5 == "") {
+        var cre5b = 0;
+    }
   
     var crse6 = document.getElementById("course6").value;
     var cu6 = document.getElementById("cre6").value;
@@ -152,6 +157,9 @@ function calculateGPA() {
         var cre6b = 1;
     }
     else if (crse6 == "F") {
+        var cre6b = 0;
+    }
+    else if (crse6 == "") {
         var cre6b = 0;
     }
 
@@ -176,6 +184,10 @@ function calculateGPA() {
     else if (crse7 == "F") {
         var cre7b = 0;
     }
+    else if (crse7== "") {
+        var cre7b = 0;
+    }
+
 
     var crse8 = document.getElementById("course8").value;
     var cu8 = document.getElementById("cre8").value;
@@ -196,6 +208,9 @@ function calculateGPA() {
         var cre8b = 1;
     }
     else if (crse8 == "F") {
+        var cre8b = 0;
+    }
+    else if (crse8 == "") {
         var cre8b = 0;
     }
 
@@ -220,6 +235,9 @@ function calculateGPA() {
     else if (crse9 == "F") {
         var cre9b = 0;
     }
+    else if (crse9 == "") {
+        var cre9b = 0;
+    }
 
     var crse10 = document.getElementById("course10").value;
     var cu10 = document.getElementById("cre10").value;
@@ -240,6 +258,9 @@ function calculateGPA() {
         var cre10b = 1;
     }
     else if (crse10 == "F") {
+        var cre10b = 0;
+    }
+    else if (crse10 == "") {
         var cre10b = 0;
     }
 
@@ -264,6 +285,9 @@ function calculateGPA() {
     else if (crse11 == "F") {
         var cre11b = 0;
     }
+    else if (crse11 == "") {
+        var cre11b = 0;
+    }
 
     var crse12 = document.getElementById("course12").value;
     var cu12= document.getElementById("cre12").value;
@@ -284,6 +308,9 @@ function calculateGPA() {
         var cre12b = 1;
     }
     else if (crse12 == "F") {
+        var cre12b = 0;
+    }
+    else if (crse12 == "") {
         var cre12b = 0;
     }
 
@@ -308,6 +335,10 @@ function calculateGPA() {
     else if (crse13 == "F") {
         var cre13b = 0;
     }
+    else if (crse13 == "") {
+        var cre13b = 0;
+    }
+
   /calculate quality points/
     var qp1 = cre1b * cu1;
     var qp2 = cre2b * cu2;
@@ -346,7 +377,7 @@ function calculateCGPA() {
     var CGPA = semTotal/2;
 
     var cgpaApx = CGPA.toFixed(2);
-    document.getElementById("result").style.display = "none"
+    document.getElementById("result").style.display = "none";
     document.getElementById("result2").style.display = "block";
     document.getElementById("cgpaFigure").innerHTML = cgpaApx;
 }
