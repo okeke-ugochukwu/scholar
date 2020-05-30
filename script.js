@@ -346,7 +346,7 @@ function calculateCGPA() {
     var CGPA = semTotal/2;
 
     var cgpaApx = CGPA.toFixed(2);
-    document.getElementById("calculateCGPA").style.ba
+    document.getElementById("result").style.display = "none"
     document.getElementById("result2").style.display = "block";
     document.getElementById("cgpaFigure").innerHTML = cgpaApx;
 }
